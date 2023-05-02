@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  max-width: 2560px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#cart-image {
+  width: 3vh;
+  height: auto;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#cart-image:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#header-sup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+#slug-logo {
+  max-width: 400px; /* Máximo da largura da imagem */
+  width: 100%;
+  max-height: 280px; /* Máximo da altura da imagem */
+  min-height: auto; /* Mínimo da altura, por padrão “auto” */
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-left: 40px;
+}
+
+#header-inf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10vh;
+  margin-left: 50vh;
+  margin-top: 10vh;
+}
+
+#image-product {
+  width: 40vh;
+  align-items: center;
+}
+
+#product {
+  display: flex;
+  flex-direction: column;
+}
+
+#links {
+  display: flex;
+  flex-direction: row;
+  font-size: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+#i {
+  padding-right: 1vh;
+}
+
+#infos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#name-price {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+#sizes {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin-top: 1vh;
+}
+
+#button-buy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  margin-top: 2vh;
+}
+
+#button {
+  background: #000000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5vh;
+  width: 200px;
+  height: 50px;
+  border: 1px solid #eee;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+
+#button:hover {
+  background: #000000bb;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+
+#name-product {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
+}
+
+#price-product {
+  font-size: 15px;
+  font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
+}
+
+#ProductSelect-product-template-option-0 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif)
+    no-repeat #eeeeee;
+  background-position: 218px center;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+}
+
+#paragraph-insta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+#image-insta {
+  width: 3vh;
+  padding-right: 1vh;
+}

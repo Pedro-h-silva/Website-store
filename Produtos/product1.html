@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slug clothings</title>
+    <link rel="stylesheet" href="product1.css" />
+    <script src="products.js" render></script>
+  </head>
+  <body>
+    <header class="header">
+      <div id="header-sup">
+        <a href="./cart.html" target="_blank"
+          ><img src="/Imagens/carrinho.png" alt="cart" id="cart-image"
+        /></a>
+      </div>
+      <div id="header-inf">
+        <img src="/Imagens/SlugLogo.jpg" alt="slug-logo" id="slug-logo" />
+      </div>
+    </header>
+    <main class="main-content">
+      <div id="container">
+        <div id="product">
+          <div id="links">
+            <a href="/Marcação e estilização/index.html" id="i"
+              >Início >
+              <a href="/Produtos/product1.html"> Slug t-shirt black</a></a
+            >
+          </div>
+          <img
+            src="/Imagens/produto-1.jpg"
+            alt="image-product"
+            id="image-product"
+          />
+        </div>
+
+        <div id="infos">
+          <div id="name-price">
+            <p id="name-product">Slug t-shirt black</p>
+            <p id="price-product">R$ 199,90</p>
+          </div>
+          <div id="sizes">
+            <label for="ProductSelect-option-0">Tamanho</label>
+            <select
+              name="single-option-selector"
+              data-option="option1"
+              id="ProductSelect-product-template-option-0"
+            >
+              <option value="P">P</option>
+              <option value="M">M</option>
+              <option value="G">G</option>
+              <option value="GG">GG</option>
+              <option value="XG">XG</option>
+            </select>
+          </div>
+          <div id="button-buy">
+            <button id="button" onclick="AddCart()">COMPRAR</button>
+          </div>
+          <div id="insta-link">
+            <a href="https://www.instagram.com/slug_br/" id="paragraph-insta"
+              ><img src="/Imagens/instagram.png" alt="insta" id="image-insta" />
+              INSTAGRAM</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
