@@ -71,8 +71,8 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10vh;
-  margin-left: 50vh;
-  margin-top: 10vh;
+  margin-left: 60vh;
+  margin-top: 15vh;
 }
 
 #image-product {
@@ -89,12 +89,21 @@
   display: flex;
   flex-direction: row;
   font-size: 2vh;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
   font-weight: bold;
 }
 
 #i {
   padding-right: 1vh;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#i:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 #infos {
@@ -170,15 +179,99 @@
   padding-left: 10px;
 }
 
-#paragraph-insta {
+#sub-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin-top: 2vh;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  gap: 10vh;
+}
+
+#image-01 {
+  width: 30vh;
+  margin-right: 90vh;
+}
+
+#infos-product {
+  margin-top: 15vh;
+}
+
+#info-title {
+  font-size: 2vh;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+}
+
+#descripiton {
+  font-size: 2vh;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+}
+
+#recommended {
+  margin-right: 70vh;
+}
+
+#product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#product-infos-2 {
+  font-size: 1.5vh;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+}
+
+#product-2 {
+  width: 35vh;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#product-2:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#position {
+  position: relative;
+  text-align: center;
 }
 
 #image-insta {
   width: 3vh;
   padding-right: 1vh;
+}
+
+.footer {
+  margin-top: 20vh;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contacts {
+  padding: 2vh;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#contacts:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+#authors {
+  position: relative;
+  display: flex;
 }
