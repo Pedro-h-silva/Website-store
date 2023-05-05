@@ -66,12 +66,8 @@
 
 #container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 10vh;
-  margin-left: 60vh;
   margin-top: 15vh;
 }
 
@@ -274,4 +270,50 @@
 #authors {
   position: relative;
   display: flex;
+}
+
+@media (max-width: 1100px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    flex-wrap: wrap;
+    margin-top: 15vh;
+  }
+
+  #sub-container {
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+  }
+
+  #infos-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #recommended {
+    margin-right: 0vh;
+  }
+
+  #descripiton {
+    width: 25vh;
+    font-size: 2vh;
+    font-family: "Open Sans", cursive, Arial, sans-serif;
+  }
 }

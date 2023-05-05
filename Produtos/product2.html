@@ -8,5 +8,96 @@
     <link rel="stylesheet" href="product2.css" />
     <script src="products.js" render></script>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div id="header-sup">
+        <a href="./cart.html" target="_blank"
+          ><img src="/Imagens/carrinho.png" alt="cart" id="cart-image"
+        /></a>
+      </div>
+      <div id="header-inf">
+        <img src="/Imagens/SlugLogo.jpg" alt="slug-logo" id="slug-logo" />
+      </div>
+    </header>
+    <main class="main-content">
+      <div id="container">
+        <div id="product">
+          <div id="links">
+            <a href="/Marcação e estilização/index.html" id="i"
+              >Início
+              <a href="/Produtos/product1.html">> Slug t-shirt off-white</a></a
+            >
+          </div>
+          <img
+            src="/Imagens/produto-2.jpg"
+            alt="image-product"
+            id="image-product"
+          />
+        </div>
+        <div id="infos">
+          <div id="name-price">  
+            <p id="name-product">Slug t-shirt off-white</p>
+            <p id="price-product">R$ 199,90</p>
+          </div>
+          <div id="sizes">
+            <label for="ProductSelect-option-0">Tamanho</label>
+            <select
+              name="single-option-selector"
+              data-option="option1"
+              id="ProductSelect-product-template-option-0"
+            >
+              <option value="P">P</option>
+              <option value="M">M</option>
+              <option value="G">G</option>
+              <option value="GG">GG</option>
+              <option value="XG">XG</option>
+            </select>
+          </div>
+          <div id="button-buy">
+            <button id="button" onclick="AddCart()">COMPRAR</button>
+          </div>
+        </div>
+      </div>
+      <div id="sub-container">
+        <div id="images">
+          <img
+            src="/Imagens/tabela-de-medidas.jpg"
+            alt="image-01"
+            id="image-01"
+          />
+        </div>
+        <div id="infos-product">
+          <h4 id="info-title">Produto</h4><br><br>
+          <p id="descripiton">
+            Confeccionada com malha 100% algodão penteado super premium. É uma peça com alta gramatura evitando transparência.<br><br> Possui um caimento de modelagem streetwear e uma gola de 3cm, oferecendo mais resistência e beleza por sua textura canelada.<br><br>
+            Antes de comprar, atente-se com os tamanhos na nossa tabela de medidas, escolhendo o ideal para o seu gosto.<br><br>
+            *os tamanhos podem sofrer uma pequena alteração de até 2 cm.<br><br><br><br><br><br><br><br>
+          </p>
+        </div>
+        <div id="recommended">
+          <p id="info-title">Produtos recomendados: </p> 
+        </div> 
+
+        <div id="product">
+          <a href="/Produtos/product1.html"><img src="/Imagens/produto-1.jpg" alt="product-2" id="product-2">
+          <br>
+          <div id="position">
+            <p id="product-infos-2">Slug T-shirt black</p> 
+            <p id="product-infos-2">R$ 199,90</p>
+           </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div id="contacts">
+        <a href="https://www.instagram.com/slug_br/"
+          ><img src="/Imagens/instagram.png" alt="icon" id="icon-insta"/>
+      </div>
+      <div id="authors">
+        <p>DIREITOS RESERVADOS © 2023 - <a href="./index.html"><p>SLUG</p></a>
+        </div>
+    </footer>
+  </body>
 </html>
+
