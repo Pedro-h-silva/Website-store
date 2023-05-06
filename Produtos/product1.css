@@ -54,7 +54,6 @@
   background-size: 100%;
   background-repeat: no-repeat;
   text-align: center;
-  padding-left: 40px;
 }
 
 #header-inf {
@@ -300,6 +299,14 @@
     gap: 5vh;
   }
 
+  #images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #image-01 {
+    margin: 0 auto;
+  }
   #infos-product {
     display: flex;
     flex-direction: column;
