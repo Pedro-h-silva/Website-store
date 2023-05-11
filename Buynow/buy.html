@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="buy.js"></script>
+    <title>Slug clothings</title>
+  </head>
+  <body>
+    <header class="header">
+      <div id="header-inf">
+        <img src="/Imagens/SlugLogo.jpg" alt="slug-logo" id="slug-logo" />
+      </div>
+    </header>
+    <h1>Detalhes do Produto</h1>
+    <div id="product"></div>
+
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const product = JSON.parse(decodeURIComponent(urlParams.get("product")));
+      const productHtml = ` <table id="table">
+        <thead id="head-table">
+          <tr>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Tamanho</th>
+            <th>Quantidade</th>
+          </tr>
+        </thead>
+        <tbody id="body-table">
+          <tr>
+            <td><img src="${product.image}" alt="image-product" id="image" /></td>
+            <td>${product.price}</td>
+            <td>Tamanho: ${product.size}</td>
+            <td><input type="number" value="1" /></td>
+          </tr>
+        </tbody>
+      </table>
+    `;
+      document.getElementById("product").innerHTML = productHtml;
+    </script>
+  </body>
+</html>
