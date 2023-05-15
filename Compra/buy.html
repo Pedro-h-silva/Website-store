@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slug t-shirt</title>
+
+    <link rel="stylesheet" href="buy.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <img src="/Imagens/SlugLogo.jpg" alt="slug-logo" id="slug-logo" />
+      </div>
+    </header>
+    <main id="main-content">
+      <div id="table-reponsive">
+        <table id="product-table">
+          <tr id="titles">
+            <td id="sub-titles">Produto</td>
+            <td id="sub-titles">Nome</td>
+            <td id="sub-titles">Tamanho</td>
+            <td id="sub-titles">Preço</td>
+            <td id="sub-titles">Quantidade</td>
+          </tr>
+          <tr>
+            <td id="image">
+              <img id="product-image" alt="Imagem do produto" />
+            </td>
+            <td id="sub-titles"><p id="product-name"></p></td>
+            <td id="sub-titles"><p id="product-size"></p></td>
+            <td id="sub-titles"><p id="product-price"></p></td>
+            <td id="sub-titles">
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                value="1"
+                min="1"
+                max="10"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="finish">
+        <button id="finish-buy" type="submit">FINALIZAR COMPRA</button>
+      </div>
+    </main>
+  </body>
+  <script src="buy.js" render></script>
+</html>
