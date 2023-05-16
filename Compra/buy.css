@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
 #header {
   display: flex;
   flex-direction: column;
@@ -6,7 +12,7 @@
 }
 
 #slug-logo {
-  max-width: 400px; /* Máximo da largura da imagem */
+  max-width: 540px; /* Máximo da largura da imagem */
   width: 100%;
   max-height: 280px; /* Máximo da altura da imagem */
   min-height: auto; /* Mínimo da altura, por padrão “auto” */
@@ -24,17 +30,15 @@
   flex-wrap: wrap;
 }
 
-#table-reponsive {
-}
-
 #product-image {
-  width: 20vh;
+  width: 10vh;
 }
 
 #product-table {
-  width: 150vh;
+  width: 120vh;
   border-collapse: collapse;
   background-color: transparent;
+  border: 1px solid black;
 }
 
 #titles {
@@ -48,34 +52,78 @@
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
+  text-align: center;
 }
 
 #sub-titles {
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
+  background-color: rgb(69, 66, 66);
+  border: 1px solid rgb(255, 255, 255);
+  color: #ffffff;
+  font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
+  font-size: 15px;
 }
 
-#product-name {
+#sub-titles-2 {
+  padding: 0.75rem;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+  border: 1px solid black;
+  text-align: center;
+  font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
+  font-size: 15px;
 }
 
-#product-price {
+.quantity-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#product-size {
+.quantity-input input {
+  text-align: center;
+  width: 40px;
+  font-size: 20px;
+}
+
+.quantity-input button {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.quantity-input button:focus {
+  outline: none;
 }
 
 #quantity {
   text-align: center;
   padding: 0.75rem;
-  vertical-align: top;
+  vertical-align: middle;
+  border: 0;
 }
 
-#finish-buy {
+#lixeria {
+  width: 3vh;
+}
+
+#sub-titles-3 {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #ffffff;
+  background-color: rgb(69, 66, 66);
+  height: 3vh;
+  color: #ffffff;
+  font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
 }
 
 /* estilos para telas maiores que 600px */
-@media ((min-width: 800px) and (max-width:1300px)) {
+@media ((min-width: 800px) and (max-width:1450px)) {
   #product-table {
     width: 100%;
   }

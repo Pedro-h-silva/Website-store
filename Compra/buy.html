@@ -16,36 +16,37 @@
     </header>
     <main id="main-content">
       <div id="table-reponsive">
-        <table id="product-table">
+        <table id="product-table"  class="table-centered">
           <tr id="titles">
             <td id="sub-titles">Produto</td>
             <td id="sub-titles">Nome</td>
             <td id="sub-titles">Tamanho</td>
             <td id="sub-titles">Preço</td>
             <td id="sub-titles">Quantidade</td>
+            <td id="sub-titles">Excluir</td>
           </tr>
           <tr>
             <td id="image">
               <img id="product-image" alt="Imagem do produto" />
             </td>
-            <td id="sub-titles"><p id="product-name"></p></td>
-            <td id="sub-titles"><p id="product-size"></p></td>
-            <td id="sub-titles"><p id="product-price"></p></td>
-            <td id="sub-titles">
-              <input
-                type="number"
-                id="quantity"
-                name="quantity"
-                value="1"
-                min="1"
-                max="10"
-              />
-            </td>
+            <td id="sub-titles-2"><p id="product-name"></p></td>
+            <td id="sub-titles-2"><p id="product-size"></p></td>
+            <td id="sub-titles-2"><p id="product-price"></p></td>
+            <td id="sub-titles-2">
+              <div class="quantity-input">
+                <button type="button" class="minus-btn" onclick="decrementValue()">-</button>
+                <input type="text" id="quantity" name="quantity" value="1" readonly>
+                <button type="button" class="plus-btn" onclick="incrementValue()">+</button>
+              </div>
+            <td id="sub-titles-2"><button type="reset" onclick="Remove()"><img src="/Imagens/lixeira.svg" alt="lixeira" id="lixeria"></button></p></td>
+          </tr>
+          <tr id="sub-total">
+            <td colspan="6" id="sub-titles-3">TOTAL: <p id="product-price"></p></td>
           </tr>
         </table>
       </div>
       <div id="finish">
-        <button id="finish-buy" type="submit">FINALIZAR COMPRA</button>
+        <button id="finish-buy" type="submit" onclick="Pay()">FINALIZAR COMPRA</button>
       </div>
     </main>
   </body>

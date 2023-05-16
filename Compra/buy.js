@@ -9,3 +9,31 @@ document.getElementById("product-name").textContent = name;
 document.getElementById("product-price").textContent = price;
 document.getElementById("product-size").textContent = size;
 document.getElementById("product-image").src = decodeURIComponent(image);
+
+function Remove() {
+  alert("teste");
+}
+
+function Pay() {
+  alert("teste");
+}
+
+function incrementValue() {
+  var value = parseInt(document.getElementById("quantity").value, 10);
+  value = isNaN(value) ? 1 : value;
+  if (value < 10) {
+    value++;
+    document.getElementById("quantity").value = value;
+  }
+}
+
+function decrementValue() {
+  var value = parseInt(document.getElementById("quantity").value, 10);
+  value = isNaN(value) ? 1 : value;
+  if (value > 1) {
+    value--;
+    document.getElementById("quantity").value = value;
+  }
+}
+
+function Remove() {}
