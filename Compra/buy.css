@@ -48,7 +48,7 @@
 }
 
 #image {
-  width: 30vh;
+  width: 10vh;
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
@@ -122,33 +122,7 @@
   font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
 }
 
-/* estilos para telas maiores que 600px */
-@media ((min-width: 800px) and (max-width:1450px)) {
-  #product-table {
-    width: 100%;
-  }
-  #product-table td {
-    text-align: center;
-    padding: 10px;
-  }
-  #titles {
-    display: table-row;
-  }
-  #product-image {
-    width: 15vh;
-  }
-}
-
-/* estilos para telas menores que 600px */
-@media (max-width: 800px) {
-  #product-table td {
-    display: block;
-    text-align: left;
-  }
-  #product-image {
-    float: left;
-    height: 80px;
-    width: 80px;
-    margin-right: 10px;
-  }
+#empty-text {
+  font-size: 50px;
+  background-color: #000;
 }

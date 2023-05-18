@@ -10,12 +10,17 @@ function Cart() {
   // Criar um objeto com as informações do produto
   const product = { name, price, size, image };
 
-  // Codificar o objeto em uma string de consulta da URL
-  const params = new URLSearchParams(product).toString();
+  let cartItems = [];
+  if (localStorage.getItem("cartItems")) {
+    cartItems = JSON.parse(localStorage.getItem("cartItems"));
+  }
 
-  // Armazenar a string de consulta da URL em localStorage para ser acessada na página de checkout
-  localStorage.setItem("params", params);
+  // Adicionar o produto atual à lista de produtos
+  cartItems.push(product);
 
-  // Redirecionar o usuário para a página de checkout com os parâmetros na URL
-  window.location.href = "/Compra/buy.html?" + params;
+  // Armazenar a lista de produtos atualizada em localStorage
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+
+  // Redirecionar o usuário para a página de checkout
+  window.open("/Compra/buy.html", "_self");
 }

@@ -10,14 +10,6 @@ document.getElementById("product-price").textContent = price;
 document.getElementById("product-size").textContent = size;
 document.getElementById("product-image").src = decodeURIComponent(image);
 
-function Remove() {
-  alert("teste");
-}
-
-function Pay() {
-  alert("teste");
-}
-
 function incrementValue() {
   var value = parseInt(document.getElementById("quantity").value, 10);
   value = isNaN(value) ? 1 : value;
@@ -36,4 +28,38 @@ function decrementValue() {
   }
 }
 
-function Remove() {}
+function deleteRow(row) {
+  // Obtém o índice da linha para remover
+  const rowIndex = row.rowIndex;
+
+  // Remove a linha da tabela
+  const cartTable = document.getElementById("product-table");
+  cartTable.deleteRow(rowIndex);
+
+  // Obtém os itens do carrinho armazenados em localStorage
+  const cartItems = JSON.parse(localStorage.getItem("cartItems"));
+
+  // Remove o item correspondente ao índice da linha
+  cartItems.splice(rowIndex - 1, 1);
+
+  // Atualiza o armazenamento local com os itens atualizados
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
+}
+
+function Delete() {
+  const row = event.target.closest("tr");
+  deleteRow(row);
+
+  const cartItems = JSON.parse(localStorage.getItem("cartItems"));
+  const cartWrapper = document.getElementById("table-reponsive");
+  const buttonPay = document.getElementById("finish-buy");
+
+  if (cartItems.length === 0) {
+    cartWrapper.remove();
+    buttonPay.remove();
+  }
+}
+
+function Pay() {
+  alert("teste");
+}
