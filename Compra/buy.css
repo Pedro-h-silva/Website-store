@@ -4,6 +4,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:wght@100&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
 #header {
   display: flex;
   flex-direction: column;
@@ -120,9 +132,4 @@
   height: 3vh;
   color: #ffffff;
   font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
-}
-
-#empty-text {
-  font-size: 50px;
-  background-color: #000;
 }

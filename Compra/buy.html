@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slug t-shirt</title>
-
     <link rel="stylesheet" href="buy.css" />
+    <link rel="stylesheet" href="EmptyCart.css" />
   </head>
   <body>
     <header>
@@ -28,81 +28,7 @@
             </tr>
           </thead>
           <tbody id="cart-items">
-            <!-- Os itens do carrinho serão adicionados aqui -->
-            <script>
-              // Obter os itens do carrinho armazenados em localStorage
-              const cartItems = JSON.parse(localStorage.getItem("cartItems"));
-              const cartWrapper = document.getElementById("table-reponsive");
-
-              // Obter a referência da tabela
-              const cartTable = document.getElementById("cart-items");
-
-              // Verificar se o carrinho está vazio
-              if (cartItems.length === 0) {
-                cartWrapper.remove();
-
-                const emptyCartRow = document.createElement("tr");
-                const emptyCartCell = document.createElement("td");
-                emptyCartCell.colSpan = 6; // Definir o colspan para o número total de colunas
-                emptyCartCell.textContent = emptyCartText;
-                emptyCartRow.appendChild(emptyCartCell);
-                cartTable.appendChild(emptyCartRow);
-              } else {
-                // Se o carrinho não estiver vazio, continuar com o loop forEach
-                cartItems.forEach((item) => {
-                  const row = document.createElement("tr");
-
-                  const imageCell = document.createElement("td");
-                  const image = document.createElement("img");
-                  image.id = "image";
-                  imageCell.id = "sub-titles-2";
-                  image.src = item.image;
-                  imageCell.appendChild(image);
-                  row.appendChild(imageCell);
-
-                  const nameCell = document.createElement("td");
-                  nameCell.id = "sub-titles-2";
-                  nameCell.textContent = item.name;
-                  row.appendChild(nameCell);
-
-                  const sizeCell = document.createElement("td");
-                  sizeCell.id = "sub-titles-2";
-                  sizeCell.textContent = item.size;
-                  row.appendChild(sizeCell);
-
-                  const priceCell = document.createElement("td");
-                  priceCell.id = "sub-titles-2";
-                  priceCell.textContent = item.price;
-                  row.appendChild(priceCell);
-
-                  const quantityCell = document.createElement("td");
-                  const quantityInputHtml = `
-                    <div class="quantity-input">
-                      <button type="button" class="minus-btn" onclick="decrementValue()">-</button>
-                      <input type="text" id="quantity" name="quantity" value="1" readonly>
-                      <button type="button" class="plus-btn" onclick="incrementValue()">+</button>
-                    </div>
-                  `;
-                  quantityCell.innerHTML = quantityInputHtml;
-                  quantityCell.id = "sub-titles-2";
-                  row.appendChild(quantityCell);
-
-                  const removeCell = document.createElement("td");
-                  const removeButtonHtml = `
-                  <button type="reset" onclick="Delete()">
-                    <img src="/Imagens/lixeira.svg" alt="lixeira" id="lixeria">
-                  </button>
-                `;
-                  removeCell.innerHTML = removeButtonHtml;
-                  removeCell.id = "sub-titles-2";
-                  row.appendChild(removeCell);
-
-                  cartTable.appendChild(row);
-
-                  // ...
-                });
-              }
-            </script>
+            <script src="/Compra/Cart.js"></script>
           </tbody>
         </table>
       </div>

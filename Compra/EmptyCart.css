@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Ysabeau:wght@100&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#emptyCartDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-link {
+  color: #000;
+  font-size: 2vh;
+  font-family: "Roboto", cursive, Arial, sans-serif;
+}
+
+.custom-link-2 {
+  color: #000;
+  font-size: 2vh;
+  font-family: "Roboto", cursive, Arial, sans-serif;
+}
+
+#titleEmptyCart {
+  text-align: center;
+  font-size: 3vh;
+  font-family: "Ysabeau", Arial, sans-serif;
+  padding: 10vh;
+}
+
+#emptyCartMessage {
+  text-align: center;
+  width: 50%;
+  padding: 5vh 5vh 10vh 5vh;
+  font-family: "Dosis", Arial, sans-serif;
+  font-size: 3vh;
+  font-weight: 400;
+}
+
+#link-text {
+  text-decoration: underline #000000;
+}
+
+#newDiv {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+#icon-insta {
+  padding-bottom: 2vh;
+}
