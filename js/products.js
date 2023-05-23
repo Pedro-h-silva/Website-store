@@ -22,5 +22,5 @@ function Cart() {
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
   // Redirecionar o usuário para a página de checkout
-  window.open("/Compra/buy.html", "_self");
+  window.open("/Html/buy.html", "_self");
 }

@@ -42,6 +42,28 @@
   flex-wrap: wrap;
 }
 
+#home {
+  display: flex;
+  align-items: center;
+  padding-left: 40vh;
+  padding-bottom: 3vh;
+}
+
+#sub-links {
+  color: #000000;
+  font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
+  font-size: 20px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#sub-links:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 #product-image {
   width: 10vh;
 }
@@ -50,7 +72,7 @@
   width: 120vh;
   border-collapse: collapse;
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 250, 250);
 }
 
 #titles {
@@ -71,9 +93,9 @@
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
-  background-color: rgb(69, 66, 66);
-  border: 1px solid rgb(255, 255, 255);
-  color: #ffffff;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(242, 242, 242);
+  color: #000000;
   font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
   font-size: 15px;
 }
@@ -82,7 +104,7 @@
   padding: 0.75rem;
   vertical-align: middle;
   border-top: 1px solid #dee2e6;
-  border: 1px solid black;
+  border: 1px solid rgb(248, 248, 248);
   text-align: center;
   font-family: "Bruno Ace SC", cursive, Arial, sans-serif;
   font-size: 15px;
@@ -96,7 +118,7 @@
 
 .quantity-input input {
   text-align: center;
-  width: 40px;
+  width: 50px;
   font-size: 20px;
 }
 

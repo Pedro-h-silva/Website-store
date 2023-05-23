@@ -4,10 +4,12 @@ const cartWrapper = document.getElementById("table-reponsive");
 
 // Obter a referência da tabela
 const cartTable = document.getElementById("cart-items");
+const home = document.getElementById("home");
 
 // Verificar se o carrinho está vazio
 if (cartItems.length === 0) {
   cartWrapper.remove();
+  home.remove();
 
   // Criar a div
   const emptyCartDiv = document.createElement("div");
@@ -23,7 +25,7 @@ if (cartItems.length === 0) {
   const linkEmptyCart = document.createElement("a");
   linkEmptyCart.textContent = "Início > ";
   linkEmptyCart.id = "linkEmptyCart";
-  linkEmptyCart.setAttribute("href", "/Marcação e estilização/index.html");
+  linkEmptyCart.setAttribute("href", "/Html/index.html");
   linkEmptyCart.classList.add("custom-link");
   innerDiv.appendChild(linkEmptyCart);
 
@@ -31,7 +33,7 @@ if (cartItems.length === 0) {
   const TextLinkEmptyCart = document.createElement("a");
   TextLinkEmptyCart.textContent = "carrinho ";
   TextLinkEmptyCart.id = "TextLinkEmptyCart";
-  TextLinkEmptyCart.setAttribute("href", "/Compra/buy.html");
+  TextLinkEmptyCart.setAttribute("href", "/Html/buy.html");
   TextLinkEmptyCart.classList.add("custom-link-2");
   innerDiv.appendChild(TextLinkEmptyCart);
 
@@ -46,14 +48,14 @@ if (cartItems.length === 0) {
   // Adicionar o texto explicativo na div
   const message = document.createElement("p");
   message.innerHTML =
-    "Seu carrinho está vazio no momento, clique no link e continue navegando<br><a href='/Marcação e estilização/index.html' id='link-text'>Clique aqui</a>";
+    "Seu carrinho está vazio no momento, clique no link e continue navegando<br><a href='/Html/index.html' id='link-text'>Clique aqui</a>";
   message.id = "emptyCartMessage";
   emptyCartDiv.appendChild(message);
 
   // Adicionar o texto explicativo na div
   const socialMedia = document.createElement("p");
   socialMedia.innerHTML =
-    "<a href='https://www.instagram.com/slug_br/' ><img src='/Imagens/instagram.png' alt='icon' id='icon-insta'/></a> <p>DIREITOS RESERVADOS © 2023 - <a href='./index.html'>SLUG</a></p>";
+    "<a href='https://www.instagram.com/slug_br/' ><img src='/Img/instagram.png' alt='icon' id='icon-insta'/></a> <p>DIREITOS RESERVADOS © 2023 - <a href='/Html/index.html'>SLUG</a></p>";
   socialMedia.id = "emptyCartSocialMedia";
   newDiv.appendChild(socialMedia);
 
@@ -100,7 +102,7 @@ if (cartItems.length === 0) {
     const quantityInputHtml = `
       <div class="quantity-input">
         <button type="button" class="minus-btn" onclick="decrementValue()">-</button>
-        <input type="text" id="quantity" name="quantity" value="1" readonly>
+        <input type="text" id="quantity" name="quantity" value="1" readonly >
         <button type="button" class="plus-btn" onclick="incrementValue()">+</button>
       </div>
     `;
@@ -111,7 +113,7 @@ if (cartItems.length === 0) {
     const removeCell = document.createElement("td");
     const removeButtonHtml = `
     <button type="reset" onclick="Delete()">
-      <img src="/Imagens/lixeira.svg" alt="lixeira" id="lixeria">
+      <img src="/Img/lixeira.svg" alt="lixeira" id="lixeria">
     </button>
   `;
     removeCell.innerHTML = removeButtonHtml;
@@ -119,7 +121,5 @@ if (cartItems.length === 0) {
     row.appendChild(removeCell);
 
     cartTable.appendChild(row);
-
-    // ...
   });
 }
