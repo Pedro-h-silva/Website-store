@@ -74,7 +74,7 @@ function Delete() {
     const linkEmptyCart = document.createElement("a");
     linkEmptyCart.textContent = "Início > ";
     linkEmptyCart.id = "linkEmptyCart";
-    linkEmptyCart.setAttribute("href", "/Marcação e estilização/index.html");
+    linkEmptyCart.setAttribute("href", "./index.php");
     linkEmptyCart.classList.add("custom-link");
     innerDiv.appendChild(linkEmptyCart);
 
@@ -82,7 +82,7 @@ function Delete() {
     const TextLinkEmptyCart = document.createElement("a");
     TextLinkEmptyCart.textContent = "carrinho ";
     TextLinkEmptyCart.id = "TextLinkEmptyCart";
-    TextLinkEmptyCart.setAttribute("href", "/Compra/buy.html");
+    TextLinkEmptyCart.setAttribute("href", "./buy.php");
     TextLinkEmptyCart.classList.add("custom-link-2");
     innerDiv.appendChild(TextLinkEmptyCart);
 
@@ -97,14 +97,14 @@ function Delete() {
     // Adicionar o texto explicativo na div
     const message = document.createElement("p");
     message.innerHTML =
-      "Seu carrinho está vazio no momento, clique no link e continue navegando<br><a href='/Marcação e estilização/index.html' id='link-text'>Clique aqui</a>";
+      "Seu carrinho está vazio no momento, clique no link e continue navegando<br><a href='./index.php' id='link-text'>Clique aqui</a>";
     message.id = "emptyCartMessage";
     emptyCartDiv.appendChild(message);
 
     // Adicionar o texto explicativo na div
     const socialMedia = document.createElement("p");
     socialMedia.innerHTML =
-      "<a href='https://www.instagram.com/slug_br/' ><img src='/Img/instagram.png' alt='icon' id='icon-insta'/></a> <p>DIREITOS RESERVADOS © 2023 - <a href='./index.html'>SLUG</a></p>";
+      "<a href='https://www.instagram.com/slug_br/' ><img src='/Img/instagram.png' alt='icon' id='icon-insta'/></a> <p>DIREITOS RESERVADOS © 2023 - <a href='/php/index.php'>SLUG</a></p>";
     socialMedia.id = "emptyCartSocialMedia";
     newDiv.appendChild(socialMedia);
 

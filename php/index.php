@@ -10,7 +10,7 @@
   <body class="body">
     <header class="header">
       <div id="header-sup">
-        <a href="/Html/buy.html" 
+        <a href="/php/buy.php" 
           ><img src="/Img/carrinho.png" alt="cart" id="cart-image"
         /></a>
       </div>
@@ -24,7 +24,7 @@
       </div>
       <div id="products">
         <div id="product-1">
-          <a href="/Html/product1.html"  id="product-container" >
+          <a href="/php/product1.php"  id="product-container" >
             <div id="product-buy">
               <img
                 src="/img/produto-1.jpg"
@@ -37,7 +37,7 @@
           </a>
         </div>
         <div id="product-2">
-          <a href="/Html/product2.html" >
+          <a href="/php/product2.php" >
             <div id="product-buy">
               <img
                 src="/img/produto-2.jpg"
@@ -57,7 +57,7 @@
           ><img src="/Img/instagram.png" alt="icon" id="icon-insta"/>
       </div>
       <div id="authors">
-        <p>DIREITOS RESERVADOS © 2023 - <a href="/Html/index.html"><p>SLUG</p></a>
+        <p>DIREITOS RESERVADOS © 2023 - <a href="/php/index.php"><p>SLUG</p></a>
         </div>
     </footer>
   </body>

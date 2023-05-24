@@ -148,6 +148,71 @@
   box-shadow: 5px 5px 5px #eee;
   text-shadow: none;
 }
+.row {
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vh;
+  gap: 1vh;
+  justify-content: center;
+}
+#icon_prefix {
+  width: 33%;
+  height: 3vh;
+  border-radius: 10px;
+}
+
+#icon_prefix::placeholder {
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding: 1vh;
+}
+
+#alert {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
+}
+
+#pac-h5 {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
+}
+
+#sedex-h5 {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
+}
+
+#button-send {
+  width: 33%;
+  height: 2vh;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+}
+
+#button-send:hover {
+  background: #000000bb;
+  color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
 
 #name-product {
   font-size: 15px;
@@ -305,6 +370,7 @@
   }
   #image-01 {
     margin: 0 auto;
+    width: 100%;
   }
   #infos-product {
     display: flex;

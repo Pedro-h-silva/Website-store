@@ -15,7 +15,7 @@
       </div>
     </header>
     <div id="home">
-      <a href="/Html/index.html" id="sub-links">Início </a>
+      <a href="/php/index.php" id="sub-links">Início </a>
       <p id="sub-links">> Carrinho</p>
     </div>
     <main id="main-content">
