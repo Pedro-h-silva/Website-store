@@ -24,3 +24,17 @@ function Cart() {
   // Redirecionar o usuário para a página de checkout
   window.open("/php/buy.php", "_self");
 }
+
+function trocarImagens() {
+  var imagemProduto = document.getElementById("image-product");
+  var imagem01 = document.getElementById("image-01");
+
+  var tempSrc = imagemProduto.src;
+  var tempAlt = imagemProduto.alt;
+
+  imagemProduto.src = imagem01.src;
+  imagemProduto.alt = imagem01.alt;
+
+  imagem01.src = tempSrc;
+  imagem01.alt = tempAlt;
+}

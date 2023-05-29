@@ -50,8 +50,6 @@ if(isset($_POST['cep'])){
     <script src="/js/products.js" render></script>
     <style>
 
-
-
       .row {
   width: 50vh;
   display: flex;
@@ -63,7 +61,7 @@ if(isset($_POST['cep'])){
 #icon_prefix {
   width: 42%;
   height: 3vh;
-  
+  border-radius: 0px;
 }
 
 #icon_prefix::placeholder {
@@ -76,7 +74,7 @@ if(isset($_POST['cep'])){
 #alert {
   display: flex;
   flex-direction: row;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Open Sans", cursive, Arial, sans-serif;
   font-weight: bold;
   padding-bottom: 1vh;
@@ -85,7 +83,7 @@ if(isset($_POST['cep'])){
 #pac-h5 {
   display: flex;
   flex-direction: row;
-  font-size: 18px;
+  font-size: 15px;
   font-family: "Open Sans", cursive, Arial, sans-serif;
   font-weight: bold;
   padding-bottom: 1vh;
@@ -94,7 +92,16 @@ if(isset($_POST['cep'])){
 #sedex-h5 {
   display: flex;
   flex-direction: row;
-  font-size: 18px;
+  font-size: 15px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
+}
+
+#motoboy-h5 {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
   font-family: "Open Sans", cursive, Arial, sans-serif;
   font-weight: bold;
   padding-bottom: 1vh;
@@ -117,6 +124,28 @@ if(isset($_POST['cep'])){
   box-shadow: 5px 5px 5px #eee;
   text-shadow: none;
 }
+
+#image-01 {
+  width: 18vh;
+  margin-right: 90vh;
+}
+
+#i {
+  padding-right: 1vh;
+  padding-bottom: 5vh;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+#i:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  
+}
+
 
 @media (max-width: 1100px) {
   .row {
@@ -203,6 +232,47 @@ if(isset($_POST['cep'])){
     width: 100%;
   }
 
+  #alert {
+    display: flex;
+    text-align:  center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Open Sans", cursive, Arial, sans-serif;
+    font-weight: bold;
+    padding-bottom: 1vh;
+  }
+
+  #pac-h5 {
+    display: flex;
+    text-align:  center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Open Sans", cursive, Arial, sans-serif;
+    font-weight: bold;
+    padding-bottom: 1vh;
+  }
+
+  #sedex-h5 {
+    display: flex;
+    text-align:  center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Open Sans", cursive, Arial, sans-serif;
+    font-weight: bold;
+  }
+
+
+  #motoboy-h5{
+    display: flex;
+    text-align:  center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Open Sans", cursive, Arial, sans-serif;
+    font-weight: bold;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-bottom: 10vh;
+  }
 
 }
     </style>
@@ -231,8 +301,10 @@ if(isset($_POST['cep'])){
             src="/Img/produto-1.jpg"
             alt="image-product"
             id="image-product"
+            onclick="trocarImagens()"
           />
         </div>
+       <script src="/js/switchImg.js"></script>
         <div id="infos">
           <div id="name-price">  
             <p id="name-product">Slug t-shirt black</p>
@@ -273,6 +345,7 @@ if(isset($_POST['cep'])){
                 <h5 id="alert">Entrega para o Cep:<?php echo $cepDestino ?></h5>
                 <h5 id="pac-h5">Pac: R$<?php echo $resultPAC ['cServico']['Valor']?>(Prazo: <?php echo $resultPAC ['cServico']['PrazoEntrega']?> dias úteis) </h5>
                 <h5 id="sedex-h5">Sedex: R$<?php echo $resultSEDEX ['cServico']['Valor']?>(Prazo: <?php echo $resultSEDEX ['cServico']['PrazoEntrega']?> dias úteis) </h5>
+                <h5 id="motoboy-h5">Tele-entrega: R$ 20,00 (Prazo: 1 dia útil)(Somente para caxias do sul e região)</h5>
               </div>
             </div>
             <?php endif; ?>
@@ -285,6 +358,8 @@ if(isset($_POST['cep'])){
             src="/Img/tabela-de-medidas.jpg"
             alt="image-01"
             id="image-01"
+            class="tabela-medidas"
+            onclick="trocarImagens()"     
           />
         </div>
         <div id="infos-product">

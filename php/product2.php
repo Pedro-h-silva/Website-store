@@ -51,162 +51,232 @@ if(isset($_POST['cep'])){
     <script src="/js/products.js" render></script>
     <style>
 
-
-
-.row {
-width: 50vh;
-display: flex;
-flex-direction: column;
-padding-top: 4vh;
-gap: 1vh;
-justify-content: center;
+      .row {
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vh;
+  gap: 1vh;
+  justify-content: center;
 }
 #icon_prefix {
-width: 42%;
-height: 3vh;
-
+  width: 42%;
+  height: 3vh;
+  border-radius: 0px;
 }
 
 #icon_prefix::placeholder {
-color: rgb(0, 0, 0);
-font-family: "Open Sans", cursive, Arial, sans-serif;
-font-weight: bold;
-padding: 1vh;
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding: 1vh;
 }
 
 #alert {
-display: flex;
-flex-direction: row;
-font-size: 18px;
-font-family: "Open Sans", cursive, Arial, sans-serif;
-font-weight: bold;
-padding-bottom: 1vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
 }
 
 #pac-h5 {
-display: flex;
-flex-direction: row;
-font-size: 18px;
-font-family: "Open Sans", cursive, Arial, sans-serif;
-font-weight: bold;
-padding-bottom: 1vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
 }
 
 #sedex-h5 {
-display: flex;
-flex-direction: row;
-font-size: 18px;
-font-family: "Open Sans", cursive, Arial, sans-serif;
-font-weight: bold;
-padding-bottom: 1vh;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
+}
+
+#motoboy-h5 {
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
 }
 
 #button-send {
-width: 42%;
-height: 3vh;
-background: #ffffff;
-color: #000000;
-font-weight: 900;
-font-family: "Open Sans", cursive, Arial, sans-serif;
+  width: 42%;
+  height: 3vh;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
 }
 
 #button-send:hover {
-background: #000000bb;
-color: #ffffff;
-border: 1px solid #eee;
-border-radius: 20px;
-box-shadow: 5px 5px 5px #eee;
-text-shadow: none;
-}
-
-@media (max-width: 1100px) {
-.row {
-width: 50vh;
-display: flex;
-flex-direction: column;
-padding-top: 10vh;
-gap: 1vh;
-justify-content: center;
-align-items: center;
-}
-
-#infos {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-
-#icon_prefix {
-width: 100%;
-height: 5vh;
-}
-
-#icon_prefix::placeholder {
-color: rgb(0, 0, 0);
-font-family: "Open Sans", cursive, Arial, sans-serif;
-font-weight: bold;
-padding: 1vh;
-
-}
-
-#alert {
-display: flex;
-flex-direction: row;
-font-size: 14px;
-font-family: "Open Sans", cursive, Arial, sans-serif;
-font-weight: bold;
-padding-bottom: 1vh;
-
-}
-
-#pac-h5 {
-display: flex;
-flex-direction: row;
-font-size: 14px;
-font-family: "Open Sans", cursive, Arial, sans-serif;
-font-weight: bold;
-padding-bottom: 1vh;
-
-}
-
-#sedex-h5 {
-display: flex;
-flex-direction: row;
-font-size: 14px;
-font-family: "Open Sans", cursive, Arial, sans-serif;
-font-weight: bold;
-padding-bottom: 1vh;
-
-}
-
-#button-send {
-width: 23vh;
-height: 4vh;
-background: #ffffff;
-color: #000000;
-font-weight: 900;
-font-family: "Open Sans", cursive, Arial, sans-serif;
-
-}
-
-#button-send:hover {
-background: #000000bb;
-color: #ffffff;
-border: 1px solid #eee;
-border-radius: 20px;
-box-shadow: 5px 5px 5px #eee;
-text-shadow: none;
+  background: #000000bb;
+  color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
 }
 
 #image-01 {
-margin: 0 auto;
-width: 100%;
+  width: 18vh;
+  margin-right: 90vh;
+}
+
+#i {
+  padding-right: 1vh;
+  padding-bottom: 5vh;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+}
+
+#i:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  
 }
 
 
+@media (max-width: 1100px) {
+  .row {
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10vh;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center;
 }
-</style>
+
+#infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#icon_prefix {
+  width: 100%;
+  height: 5vh;
+}
+
+#icon_prefix::placeholder {
+  color: rgb(0, 0, 0);
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding: 1vh;
+  
+}
+
+#alert {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
+  
+}
+
+#pac-h5 {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
+  
+}
+
+#sedex-h5 {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: 1vh;
+  
+}
+
+#button-send {
+  width: 23vh;
+  height: 4vh;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Open Sans", cursive, Arial, sans-serif;
+  
+}
+
+#button-send:hover {
+  background: #000000bb;
+  color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow: none;
+}
+
+#image-01 {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  #alert {
+    display: flex;
+    text-align:  center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Open Sans", cursive, Arial, sans-serif;
+    font-weight: bold;
+    padding-bottom: 1vh;
+  }
+
+  #pac-h5 {
+    display: flex;
+    text-align:  center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Open Sans", cursive, Arial, sans-serif;
+    font-weight: bold;
+    padding-bottom: 1vh;
+  }
+
+  #sedex-h5 {
+    display: flex;
+    text-align:  center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Open Sans", cursive, Arial, sans-serif;
+    font-weight: bold;
+  }
+
+
+  #motoboy-h5{
+    display: flex;
+    text-align:  center;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: "Open Sans", cursive, Arial, sans-serif;
+    font-weight: bold;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-bottom: 10vh;
+  }
+
+}
+    </style>
   </head>
   <body>
     <header class="header">
@@ -225,18 +295,20 @@ width: 100%;
           <div id="links">
             <a href="/php/index.php" id="i"
               >Início
-              <a href="/php/product1.php">> Slug t-shirt off-white</a></a
+              <a href="/php/product1.php">> Slug t-shirt Off-white</a></a
             >
           </div>
           <img
             src="/Img/produto-2.jpg"
             alt="image-product"
             id="image-product"
+            onclick="trocarImagens()"
           />
         </div>
+       <script src="/js/switchImg.js"></script>
         <div id="infos">
           <div id="name-price">  
-            <p id="name-product">Slug t-shirt off-white</p>
+            <p id="name-product">Slug t-shirt Off-white</p>
             <p id="price-product">R$ 199,90</p>
           </div>
           <div id="sizes">
@@ -254,7 +326,7 @@ width: 100%;
             </select>
           </div>
           <div id="button-buy">
-            <button id="button" onclick="Cart()">COMPRAR</button>
+            <button id="button" type="submit" onclick="Cart()">COMPRAR</button>
           </div>
           <form method="post">
             <div class="row">
@@ -274,11 +346,10 @@ width: 100%;
                 <h5 id="alert">Entrega para o Cep:<?php echo $cepDestino ?></h5>
                 <h5 id="pac-h5">Pac: R$<?php echo $resultPAC ['cServico']['Valor']?>(Prazo: <?php echo $resultPAC ['cServico']['PrazoEntrega']?> dias úteis) </h5>
                 <h5 id="sedex-h5">Sedex: R$<?php echo $resultSEDEX ['cServico']['Valor']?>(Prazo: <?php echo $resultSEDEX ['cServico']['PrazoEntrega']?> dias úteis) </h5>
+                <h5 id="motoboy-h5">Tele-entrega: R$ 20,00 (Prazo: 1 dia útil)(Somente para caxias do sul e região)</h5>
               </div>
             </div>
             <?php endif; ?>
-          </form>
-            </div>
           </form>
         </div>
       </div>
@@ -288,6 +359,8 @@ width: 100%;
             src="/Img/tabela-de-medidas.jpg"
             alt="image-01"
             id="image-01"
+            class="tabela-medidas"
+            onclick="trocarImagens()"     
           />
         </div>
         <div id="infos-product">
@@ -301,8 +374,9 @@ width: 100%;
         <div id="recommended">
           <p id="info-title">Produtos recomendados: </p> 
         </div> 
+
         <div id="product">
-          <a href="/php/product1.php"><img src="/Img/produto-1.jpg" alt="product-2" id="product-2">
+          <a href="/php/product1.php"><img src="/Img/produto-1.jpg" alt="product-1" id="product-1">
           <br>
           <div id="position">
             <p id="product-infos-2">Slug T-shirt black</p> 
@@ -322,5 +396,6 @@ width: 100%;
         </div>
     </footer>
   </body>
+    
 </html>
 
